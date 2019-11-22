@@ -4,10 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AppPonto.Controles.ActivityIndicatorPage">
+             x:Class="AppPonto.Pages.LoginPage">
     <ContentPage.Content>
         <StackLayout>
-            <ActivityIndicator Color="Red" IsRunning="True"/>
+            <Label Text="Welcome to Login Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Login" Clicked="Login"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

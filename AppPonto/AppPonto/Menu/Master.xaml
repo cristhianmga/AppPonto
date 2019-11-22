@@ -8,10 +8,9 @@
              x:Class="AppPonto.Menu.Master"
              Title="Menu">
     <MasterDetailPage.Master>
-        <ContentPage Title="This is a view">
+        <ContentPage Title="Menu">
             <StackLayout>
-                <Button Text="Activity Indicator" Clicked="GoToActivityIndicator"/>
-                <Button Text="Progress Bar" Clicked="GoToProgressBar"/>
+                <Button Text="Perfil" Clicked="GoToPerfil"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

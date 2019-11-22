@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,9 +9,7 @@ namespace AppPonto
     {
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new Menu.Master();
+                MainPage = new Menu.Master();
         }
 
         protected override void OnStart()

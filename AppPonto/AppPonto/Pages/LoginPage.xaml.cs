@@ -7,32 +7,26 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppPonto.Menu
+namespace AppPonto.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Master : MasterDetailPage
+    public partial class LoginPage : ContentPage
     {
-        public Master()
+        public LoginPage()
         {
             InitializeComponent();
-            string oauthToken = string.Empty;
+        }
+
+        private void Login(object sender,EventArgs args)
+        {
             try
             {
-                oauthToken = SecureStorage.GetAsync("oauth_token_app_ponto").Result;
+                SecureStorage.SetAsync("oauth_token_app_ponto", "está logado");
             }
             catch (Exception ex)
             {
                 // Possible that device doesn't support secure storage on device.
             }
-            if (string.IsNullOrEmpty(oauthToken))
-            {
-                Detail = new Pages.LoginPage();
-            }
-        }
-
-        private void GoToPerfil(object sender, EventArgs args)
-        {
-            Detail = new MainPage();
         }
     }
 }
