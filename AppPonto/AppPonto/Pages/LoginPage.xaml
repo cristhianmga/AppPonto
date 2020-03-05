@@ -6,11 +6,27 @@
              mc:Ignorable="d"
              x:Class="AppPonto.Pages.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Login Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Login" Clicked="Login"/>
+        <StackLayout BackgroundColor="#2d2d2d" Orientation="Vertical" Spacing="20">
+            <Label Text="Login"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="50"
+                TextColor="White"
+                Margin="40"/>
+            <Entry Placeholder="CPF"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   WidthRequest="300"
+                   PlaceholderColor="White"
+                   Margin="40"/>
+            <Entry Placeholder="Senha" IsPassword="True"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   WidthRequest="300"
+                   PlaceholderColor="White"/>
+            <Button Text="Login" Margin="40" BackgroundColor="White" FontSize="20" WidthRequest="300" Clicked="Login"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

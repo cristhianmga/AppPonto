@@ -11,6 +11,7 @@
         <ContentPage Title="Menu">
             <StackLayout>
                 <Button Text="Perfil" Clicked="GoToPerfil"/>
+                <Button Text="Logout" Clicked="Logout"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

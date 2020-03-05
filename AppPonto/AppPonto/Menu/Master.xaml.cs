@@ -34,5 +34,22 @@ namespace AppPonto.Menu
         {
             Detail = new MainPage();
         }
+
+        private void Logout(object sender, EventArgs args)
+        {
+            try
+            {
+                var result = SecureStorage.Remove("oauth_token_app_ponto");
+
+                if (result)
+                {
+                    Detail = new Pages.LoginPage();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Possible that device doesn't support secure storage on device.
+            }
+        }
     }
 }
