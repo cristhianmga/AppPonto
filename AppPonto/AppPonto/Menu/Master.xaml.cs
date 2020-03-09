@@ -32,7 +32,7 @@ namespace AppPonto.Menu
 
         private void GoToPerfil(object sender, EventArgs args)
         {
-            Detail = new MainPage();
+            Detail = new NavigationPage(new Pages.PerfilPage());
         }
 
         private void Logout(object sender, EventArgs args)

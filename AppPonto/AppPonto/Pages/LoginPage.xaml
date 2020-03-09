@@ -14,6 +14,7 @@
                 TextColor="White"
                 Margin="40"/>
             <Entry Placeholder="CPF"
+                   x:Name="CPF"
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
                    TextColor="White"
@@ -21,6 +22,7 @@
                    PlaceholderColor="White"
                    Margin="40"/>
             <Entry Placeholder="Senha" IsPassword="True"
+                   x:Name="Senha"
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
                    TextColor="White"
